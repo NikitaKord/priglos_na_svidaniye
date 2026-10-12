@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Выбор даты и времени</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="date">
+    <div class="page-shell">
+      <div class="decor decor-left">💐</div>
+      <div class="decor decor-right">💗</div>
+
+      <main class="card wide-card">
+        <p class="eyebrow">Выбираем дату и время</p>
+        <h1>Когда встретимся?</h1>
+
+        <div class="picker-box">
+          <div class="calendar-panel">
+            <div class="calendar-header">
+              <button type="button" id="prevMonthBtn" class="month-nav" aria-label="Предыдущий месяц">‹</button>
+              <div class="calendar-title-wrap">
+                <span id="calendarMonthLabel">Октябрь 2026</span>
+                <span class="calendar-note">с 13.10.2026 до 31.12.2026</span>
+              </div>
+              <button type="button" id="nextMonthBtn" class="month-nav" aria-label="Следующий месяц">›</button>
+            </div>
+            <div id="dateOptions" class="date-options"></div>
+          </div>
+
+          <div class="time-panel">
+            <label class="field-label">Время</label>
+            <div id="timeOptions" class="time-options" aria-label="Выберите время"></div>
+          </div>
+        </div>
+
+        <button id="dateNextBtn" type="button" class="primary-btn">Продолжить</button>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
